@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeD-I0-lIc">
+                                <rect key="frame" x="245" y="282" width="111" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show Picker"/>
+                                <connections>
+                                    <action selector="showPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZJ-RC-fEu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VisionSinglePhotoPickerDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yI-Ma-sxN">
+                                <rect key="frame" x="139" y="37" width="323" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lAg-T0-Dmq">
+                                <rect key="frame" x="225" y="96" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="65H-zM-l5J"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="EUl-dJ-SnC"/>
+                                    <constraint firstAttribute="width" constant="150" id="iv1-m7-1in"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EUl-dJ-SnC"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JeD-I0-lIc" firstAttribute="centerX" secondItem="lAg-T0-Dmq" secondAttribute="centerX" id="10q-t7-THh"/>
+                            <constraint firstItem="lAg-T0-Dmq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Aa-ui-hzG"/>
+                            <constraint firstItem="lAg-T0-Dmq" firstAttribute="top" secondItem="1yI-Ma-sxN" secondAttribute="top" id="6m9-y1-BYR"/>
+                            <constraint firstItem="lAg-T0-Dmq" firstAttribute="bottom" secondItem="1yI-Ma-sxN" secondAttribute="bottom" constant="50" id="8HE-0S-VF8"/>
+                            <constraint firstItem="1yI-Ma-sxN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="ewa-ID-6Vv"/>
+                            <constraint firstItem="1yI-Ma-sxN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="goh-j9-BW5"/>
+                            <constraint firstItem="JeD-I0-lIc" firstAttribute="top" secondItem="lAg-T0-Dmq" secondAttribute="bottom" constant="36" id="iD3-E4-Zk1"/>
+                            <constraint firstItem="lAg-T0-Dmq" firstAttribute="top" secondItem="1yI-Ma-sxN" secondAttribute="bottom" constant="30" id="m2t-eJ-ZyQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6m9-y1-BYR"/>
+                                <exclude reference="8HE-0S-VF8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imgv" destination="lAg-T0-Dmq" id="dIx-JG-f2p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="429"/>
+        </scene>
+    </scenes>
+</document>
