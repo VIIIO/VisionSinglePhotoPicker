@@ -24,6 +24,12 @@ None.
         [picker setPadPopoverSourceView:sourceView];
     }
     [picker show];
+    
+    
+/*image picked
+  在代理方法中处理已选择图片
+*/
+- (void)visionSinglePhotoPicker:(VisionSinglePhotoPicker *)picker pickedImage:(UIImage *)image;
 ```
 
 ## Features 特性
