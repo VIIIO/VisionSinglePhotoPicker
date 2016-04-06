@@ -4,7 +4,7 @@ VisionSinglePhotoPicker
 * 超方便的单张照片获取器。支持拍照/图库选择，已处理权限获取。
 
 ### Screenshots
-None.
+![image](http://blog.viiio.com/wp-content/uploads/2016/04/visioncontrol_03.gif)
 
 ### Contents
 ## Installation 安装
